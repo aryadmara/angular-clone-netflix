@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "portal-berita": {
+    "clone-netflix": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/portal-berita",
+            "outputPath": "dist/clone-netflix",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -64,10 +64,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "portal-berita:build:production"
+              "buildTarget": "clone-netflix:build:production"
             },
             "development": {
-              "buildTarget": "portal-berita:build:development"
+              "buildTarget": "clone-netflix:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -97,5 +97,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "a082b4ca-0c30-4b24-a37b-882a3eb9c304"
   }
 }

@@ -1,0 +1,36 @@
+<div class="bg-black py-10">
+  <!-- Section Title -->
+  <div class="flex justify-center mb-6 px-4">
+    <h1 class="text-3xl lg:text-5xl font-bold text-white">Tanya Jawab Umum</h1>
+  </div>
+
+  <!-- Accordion Section -->
+  <div class="px-4 md:px-10 lg:px-96">
+    <app-accordion
+      class="space-y-4"
+      *ngFor="let faq of accordion"
+      [title]="faq.title"
+      [description]="faq.description"
+    ></app-accordion>
+  </div>
+
+  <!-- Email Subscription Section -->
+  <div class="space-y-6 my-10 px-10 lg:px-0">
+    <h2 class="text-center text-white text-lg lg:text-2xl">
+      Siap menonton? Masukkan email untuk membuat atau memulai lagi
+      keanggotaanmu.
+    </h2>
+    <div
+      class="flex flex-col lg:flex-row items-center justify-center space-y-4 lg:space-y-0 lg:space-x-4"
+    >
+      <input
+        type="text"
+        placeholder="Alamat Email"
+        class="input input-bordered md:input-lg lg:input-lg w-full max-w-md bg-opacity-40"
+      />
+      <button class="btn bg-netflix md:btn-lg lg:btn-lg border-none text-white">
+        Mulai >
+      </button>
+    </div>
+  </div>
+</div>
